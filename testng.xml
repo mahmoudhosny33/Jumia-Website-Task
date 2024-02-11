@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/MangestOoo/IdeaProjects/JumiaWebsite">
+        <parameter name="email" value="hsony1111@gmail.com"></parameter>
+        <parameter name="password" value="Mahmoud12@"></parameter>
+        <parameter name="confirmPass" value="Mahmoud12@"></parameter>
+        <parameter name="firstName" value="mahmoud"></parameter>
+        <parameter name="lastName" value="hosny"></parameter>
+        <parameter name="phone" value="01093086979"></parameter>
+        <parameter name="gender" value="Male"></parameter>
+        <parameter name="dateOfBirth" value="02"></parameter>
+        <classes>
+            <class name="ParameterizedTest">
+                <methods>
+                     <include name="identificationTest"/>
+                      <include name="registerWithValidData"/>
+                      <include name="loginTest" />
+                      <include name="addItemAndVerifySubTotalNumber"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
